@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.output-password {
+  margin: 25px 0;
+  padding: 10px;
+  border: 1px dotted black;
+  text-align: center;
+}
+
+.option {
+  margin: 10px 0;
+}
+
+.create-password {
+  padding: 5px;
+  margin-top: 1rem;
+}

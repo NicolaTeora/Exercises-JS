@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container" role="group">
+      <h2>Calculator</h2>
+
+      <!-- back home -->
+      <div id="back-home">
+        <a href="/index.html">Back</a>
+      </div>
+
+      <!-- Output result -->
+      <input type="text" name="" id="output" readonly />
+      <span>Operator:</span><span id="operator"></span>
+
+      <!-- Numbers -->
+      <div class="number-buttons" role="group">
+        <button type="button" value="1" class="num">1</button>
+        <button type="button" value="2" class="num">2</button>
+        <button type="button" value="3" class="num">3</button>
+        <button type="button" value="4" class="num">4</button>
+        <button type="button" value="5" class="num">5</button>
+        <button type="button" value="6" class="num">6</button>
+        <button type="button" value="7" class="num">7</button>
+        <button type="button" value="8" class="num">8</button>
+        <button type="button" value="9" class="num">9</button>
+        <button type="button" value="0" class="num zero">0</button>
+      </div>
+
+      <!-- operators -->
+      <div class="operator-buttons">
+        <button type="button" id="sum" value="+">+</button>
+        <button type="button" id="sub" value="-">-</button>
+        <button type="button" id="mul" value="*">*</button>
+        <button type="button" id="divi" value="/">/</button>
+      </div>
+
+      <!-- result or Delete -->
+      <div class="result-delete">
+        <button type="button" id="result" value="=">=</button>
+        <button type="button" id="clear" value="c">C</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

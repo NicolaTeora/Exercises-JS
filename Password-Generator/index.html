@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- js -->
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password-Generator</h2>
+      <a href="/index.html">Back home</a>
+
+      <!-- output password generated -->
+      <p class="output-password" id="display-password">Password generata...</p>
+
+      <div class="options-password">
+        <!-- input select options password -->
+
+        <!-- Length password -->
+        <div class="option">
+          <label for="length-password">Lunghezza password:</label>
+          <input
+            type="number"
+            name="length"
+            id="length-password"
+            min="8"
+            max="20"
+            value="8"
+          />
+        </div>
+
+        <!-- symbols !@#$%^&*() -->
+        <div class="option">
+          <label for="symbols">Presenza simboli:</label>
+          <input type="checkbox" name="" id="symbols" />
+        </div>
+
+        <!-- Letters Upper/Lower -->
+        <div class="option">
+          <!-- Uppercase -->
+          <div>
+            <label for="upper-letters">Lettere Maiuscole:</label>
+            <input type="checkbox" name="" id="upper-letters" />
+          </div>
+
+          <!-- Lowercase -->
+          <div>
+            <label for="lower-letters">Lettere Minuscole:</label>
+            <input type="checkbox" name="" id="lower-letters" />
+          </div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="option">
+          <label for="numbers">Numeri:</label>
+          <input type="checkbox" name="" id="numbers" />
+        </div>
+      </div>
+
+      <!-- button -->
+      <button class="create-password" id="create">Generate password</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch / Alarm clock</title>
+
+    <!-- js -->
+    <script src="./main.js" defer></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Stopwatch-Alarmclock</h2>
+      <a href="/index.html">Back home</a>
+
+      <!-- display -->
+      <div id="display">
+        <span id="hours">00</span> : <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+      </div>
+
+      <!-- command buttons -->
+      <div class="commands">
+        <button class="cmd">Pause</button>
+        <button class="cmd">Start</button>
+        <button class="cmd">Reset</button>
+      </div>
+
+      <!-- AlarmClock -->
+      <div class="alarm-clock">
+        <input type="time" name="alarm" id="alarm" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#back-home,
+#output {
+  margin-bottom: 25px;
+}
+
+#operator {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+#output {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.number-buttons,
+.operator-buttons,
+.result-delete {
+  display: grid;
+}
+
+.number-buttons {
+  grid-template-columns: auto auto auto;
+}
+
+.operator-buttons {
+  margin-top: 25px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.result-delete {
+  margin-top: 10px;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

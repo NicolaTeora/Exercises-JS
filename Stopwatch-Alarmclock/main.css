@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div {
+  margin: 1rem auto;
+}
+
+#display {
+  border: 1px dotted black;
+  padding: 1rem;
+  width: fit-content;
+  font-family: monospace;
+}
+
+.cmd {
+  padding: 10px;
+  margin: 0 7px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.cmd:hover {
+  background-color: #8b8a8a;
+}
+
+#alarm {
+  padding: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
