@@ -92,7 +92,7 @@ Ecco una lista di obiettivi da seguire per creare un Generatore di password comp
 Ognuno di questi obiettivi ti darà una buona pratica sia su JavaScript che sull’interazione con il DOM!
  -->
 
-<!--
+<!-- CRONOMETRO/SVEGLIA
 Ecco un piano con gli obiettivi principali per sviluppare un cronometro/sveglia in JavaScript:
 
 1. Impostare l'interfaccia di base
@@ -120,4 +120,10 @@ Ecco un piano con gli obiettivi principali per sviluppare un cronometro/sveglia 
 5. Test e perfezionamento
 - Verifica che ogni funzione lavori come previsto e che i pulsanti siano reattivi.
 - Considera eventuali ottimizzazioni, come usare "requestAnimationFrame" al posto di "setInterval" per il cronometro se necessiti di maggiore fluidità.
+
+Prossimi passi (opzionale)
+Se tutto funziona come desideri, puoi pensare ad altre funzionalità, come:
+- Mostrare un'icona accanto al cronometro quando una sveglia è attiva.
+- Permettere di impostare più sveglie.
+- Disattivare il pulsante di reset se non c'è una sveglia impostata.
  -->
