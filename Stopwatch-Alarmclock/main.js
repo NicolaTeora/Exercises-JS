@@ -23,11 +23,13 @@ let timerId = null;
 let setTime;
 let alarmTriggered = false;
 
+// Setting time alarm
 btnSetAlarm.addEventListener("click", function () {
   setTime = alarm.value;
   alarmTriggered = false;
 });
 
+// Start timer
 btnStart.addEventListener("click", function () {
   if (!timerId) {
     timerId = setInterval(function () {
@@ -40,6 +42,7 @@ btnStart.addEventListener("click", function () {
         minutes.textContent = min < 10 ? "0" + min : min;
       }
 
+      //track set alarm
       if (setTime && !alarmTriggered) {
         const [hour, minute] = setTime.split(":");
         if (hours.textContent === hour && minutes.textContent === minute) {
@@ -51,11 +54,13 @@ btnStart.addEventListener("click", function () {
   }
 });
 
+// Pause
 btnPause.addEventListener("click", function () {
   clearInterval(timerId);
   timerId = null;
 });
 
+// Reset
 btnReset.addEventListener("click", function () {
   clearInterval(timerId);
   timerId = null;
