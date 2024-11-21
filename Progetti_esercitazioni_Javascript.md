@@ -127,3 +127,104 @@ Se tutto funziona come desideri, puoi pensare ad altre funzionalità, come:
 - Permettere di impostare più sveglie.
 - Disattivare il pulsante di reset se non c'è una sveglia impostata.
  -->
+
+<!-- QUIZ A SCELTA MULTIPLA
+1. Imposta la struttura base
+- Obiettivo:
+    - Crea la struttura HTML/CSS di base per il quiz.
+- Dettagli:
+    - Includi una sezione per mostrare la domanda.
+    - Crea un gruppo di bottoni o radio buttons per le opzioni di risposta.
+    - Aggiungi un pulsante "Avanti" per passare alla domanda successiva.
+    - Prevedi un'area per visualizzare il punteggio finale.
+
+2. Rendi statiche le domande
+- Obiettivo:
+    - Inserisci un array di oggetti in JavaScript per rappresentare un set statico di domande.
+- Dettagli:
+    ```javascript
+    const questions = [
+        {
+            question: "Qual è il capitale d'Italia?",
+            options: ["Roma", "Milano", "Napoli", "Firenze"],
+            correctAnswer: 0, // Indice della risposta corretta
+        },
+        {
+            question: "Quanti colori ci sono nell'arcobaleno?",
+            options: ["5", "6", "7", "8"],
+            correctAnswer: 2,
+        },
+    ];
+    ```
+    - Mostra una domanda alla volta leggendo dall’array.
+
+3. Gestisci la navigazione tra le domande
+- Obbiettivo:
+    - Permetti di passare da una domanda all’altra cliccando il pulsante "Avanti".
+- Dettagli:
+    - Usa una variabile per tenere traccia della domanda corrente.
+    - Aggiorna il contenuto della domanda e delle opzioni ogni volta che l’utente clicca "Avanti".
+
+4. Controlla la risposta selezionata
+- Obiettivo:
+    - Confronta la risposta selezionata dall’utente con quella corretta.
+- Dettagli:
+    - Aggiungi un event listener per rilevare quale opzione è stata scelta.
+    - Mostra un messaggio di conferma ("Corretto" o "Errato") quando si clicca su "Avanti".
+
+5. Calcola il punteggio
+- Obiettivo:
+    - Incrementa un punteggio se la risposta è corretta.
+- Dettagli:
+    - Inizia con un punteggio pari a zero.
+    - Aggiorna il punteggio ogni volta che una risposta è corretta.
+    - Mostra il punteggio totale al termine del quiz.
+
+6. Fornisci un feedback finale
+- Obiettivo:
+    - Mostra un riepilogo alla fine del quiz.
+- Dettagli:
+    - Nascondi la sezione delle domande.
+    - Mostra una nuova sezione con il punteggio totale e un messaggio finale (es. "Ottimo lavoro!" o "Puoi fare di meglio").
+
+7. Rendi dinamiche le domande (JSON)
+- Obbiettivo:
+    - Carica le domande da un file JSON esterno.
+- Dettagli:
+    Crea un file "questions.json":
+    ```json
+    [
+        {
+            "question": "Qual è il capitale d'Italia?",
+            "options": ["Roma", "Milano", "Napoli", "Firenze"],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Quanti colori ci sono nell'arcobaleno?",
+            "options": ["5", "6", "7", "8"],
+            "correctAnswer": 2
+        }
+    ]
+    ```
+    - Usa la funzione "fetch()" per leggere i dati del file e popolare il quiz.
+
+8. Migliora l'interfaccia utente
+- Obbiettivo:
+    - Usa CSS per migliorare l'aspetto del quiz.
+- Dettagli:
+    - Applica stili agli stati attivi/selezionati delle opzioni.
+    - Mostra animazioni di transizione tra le domande.
+
+9.  Aggiungi un timer (facoltativo)
+- Obbiettivo:
+    - Dai un tempo limitato per rispondere a ogni domanda.
+- Dettagli:
+    - Usa "setInterval()" per creare un conto alla rovescia.
+    - Termina automaticamente la domanda se il tempo scade.
+
+10. Rendi il quiz riutilizzabile
+- Obbiettivo:
+    - Permetti di ricominciare il quiz una volta completato.
+- Dettagli:
+    - Aggiungi un pulsante "Ricomincia" che resetta il punteggio e la domanda corrente.
+ -->
