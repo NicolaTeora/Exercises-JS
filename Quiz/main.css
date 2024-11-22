@@ -23,12 +23,12 @@ main {
   margin-bottom: 2.5rem;
 }
 
-#answears,
+#answers,
 #question {
   margin: 1rem 0;
 }
 
-.answears-display {
+.answers-display {
   display: flex;
   gap: 3rem;
 }
