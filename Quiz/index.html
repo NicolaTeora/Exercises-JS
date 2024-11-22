@@ -7,6 +7,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="main.css" />
+
+    <!-- js -->
+    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -19,9 +22,9 @@
       <!-- body project -->
       <main>
         <!-- Score -->
-        <div class="score">
+        <div class="display-score">
           <h3>Punteggio:</h3>
-          0000
+          <span id="score">0000</span>
         </div>
 
         <!-- Question section -->
@@ -52,7 +55,17 @@
           </div>
         </div>
 
-        <button type="button">Prossima Domanda -></button>
+        <!-- button settings -->
+        <div>
+          <button type="button" class="set-game" id="next-question">
+            Prossima Domanda ->
+          </button>
+        </div>
+        <div>
+          <button type="button" class="set-game" id="reset-game">
+            Reset Gioco
+          </button>
+        </div>
       </main>
     </div>
   </body>

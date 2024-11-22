@@ -18,7 +18,7 @@ main {
   text-align: start;
 }
 
-.score {
+.display-score {
   text-align: end;
   margin-bottom: 2.5rem;
 }
@@ -31,4 +31,15 @@ main {
 .answers-display {
   display: flex;
   gap: 3rem;
+}
+
+.set-game {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+}
+
+.set-game:hover {
+  background-color: rgb(114, 113, 113);
+  cursor: pointer;
 }
