@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+main {
+  text-align: start;
+}
+
+#answears,
+#question {
+  margin: 1rem 0;
+}
+
+.answears-display {
+  display: flex;
+  gap: 3rem;
+}
