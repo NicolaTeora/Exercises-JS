@@ -18,6 +18,11 @@ main {
   text-align: start;
 }
 
+.score {
+  text-align: end;
+  margin-bottom: 2.5rem;
+}
+
 #answears,
 #question {
   margin: 1rem 0;
